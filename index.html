@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="16x16" rel="icon" href="images/favicon.png">
+    <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return</p>
+    </header>
+
+    <section class="container-input">
+        <h4>Bill Amount</h4>
+        <input type="text" class="inputBox" id="billAmount" placeholder="enter bill amount here"/>
+        <h4>Cash Given</h4>
+        <input type="text" class="inputBox" id="cashGiven" placeholder="enter given cash here" />
+    </section>
+
+    <button id="checkBtn">Check</button>
+
+    <div class="errorOutput">
+        <!-- keeping empty because If user inputs something wrong in Input then error will be displayed in this div-->
+    </div>
+
+    <section class="container-output">
+        <h3>Return Change</h3>
+        <table class="outputTable">
+            <tr>
+                <th>No of Notes</th>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
