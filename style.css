@@ -122,3 +122,49 @@ table tr td {
     color: whitesmoke;  
 }
 
+/*
+responsive
+*/
+
+@media only screen and (max-width: 900px) {
+    header {
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 45px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .container-input {
+        padding: 0 0 1rem 0;
+    }
+
+    .container-output {
+        margin: 0.5rem;
+    }
+
+    section h3 {
+        font-size: 20px;
+    }
+
+    section table {
+        padding: 0;
+    }
+
+    table tr th {
+        padding: 0.4rem;
+    }
+
+    table tr td {
+        padding: 0.5rem;
+    }
+
+    .errorOutput {
+        font-size: 23px;
+    }
+}
